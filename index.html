@@ -7,12 +7,37 @@
     <script type="text/javascript" src="./lib/bugs.js"></script>
     <script type="text/javascript" src="./lib/upgr.js"></script>
     <script type="text/javascript" src="./lib/prog.js"></script>
-    <script type="text/javascript" src="./lib/loop.js"></script>
+    <script type="text/javascript" src="./lib/render.js"></script>
+    <script type="text/javascript" src="./lib/game.js"></script>
   </head>
   <body>
-
+    <style>
+      html, body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+    <div id="container">
+      <div class="sidebar">
+        <div id="upgrades"></div>
+        <div id="available-upgrades"></div>
+      </div>
+      <div class="sidebar">
+        <div id="bugs"></div>
+      </div>
+      <div class="footer">
+        <div id="lines-written"></div>
+        <div class="random-access-modules">
+          <div id="storage"></div>
+          <div id="modules"></div>
+        </div>
+      </div>
+      <div id="documentation"></div>
+      <div id="speech"></div>
+      <canvas id="game"></canvas>
+    </div>
     <script type="text/javascript">
-      CodeClicker.loop();
+      CodeClicker.init();
     </script>
   </body>
 </html>
